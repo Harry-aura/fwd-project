@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LIMITLESS // ULTIMATE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="main-panel" class="panel">
+            
+            <div id="view-login" class="view active-view" style="text-align: center;">
+                <div style="width: 80px; height: 80px; border: 4px solid var(--cyan); border-radius: 50%; margin: 0 auto 30px; box-shadow: 0 0 30px var(--cyan);"></div>
+                <h1>LIMITLESS</h1>
+                <span class="subtitle">SECURE ACCESS TERMINAL</span>
+                
+                <div style="max-width: 400px; margin: 0 auto; text-align: left;">
+                    <label>IDENTITY (NAME)</label>
+                    <input type="text" id="log-user" placeholder="Enter Username">
+                    <label>ACCESS CODE (PASSWORD)</label>
+                    <input type="password" id="log-pass" placeholder="••••••">
+                    
+                    <button onclick="login()" style="width:100%">INITIALIZE</button>
+                    <div style="margin-top: 20px; text-align: center;">
+                        <a href="#" onclick="switchView('view-register')" style="color: #00f3ff; font-size: 12px; text-decoration: none;">CREATE NEW PROFILE</a>
+                    </div>
+                    <p id="msg-login" style="color:var(--red); text-align: center; font-size: 12px; margin-top: 10px;"></p>
+                </div>
+            </div>
+
+            <div id="view-register" class="view">
+                <h2>NEW PROFILE CONFIGURATION</h2>
+                <span class="subtitle">PLEASE COMPLETE ALL FIELDS FOR CALIBRATION</span>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div>
+                        <label>FULL NAME</label><input type="text" id="reg-name">
+                    </div>
+                    <div>
+                        <label>PASSWORD</label><input type="password" id="reg-pass">
+                    </div>
+                    <div>
+                        <label>AGE</label><input type="number" id="reg-age">
+                    </div>
+                    <div>
+                        <label>CURRENT GRADE (Self Assessment)</label><input type="text" id="reg-grade">
+                    </div>
+                </div>
+
+                <label>PRIMARY OBJECTIVE (GOAL)</label>
+                <input list="goal-options" id="reg-goal" placeholder="Select or Type your main goal...">
+                <datalist id="goal-options">
+                    <option value="JEE / IIT Aspirant">
+                    <option value="UPSC / Civil Services">
+                    <option value="Software Placement">
+                    <option value="Academic Excellence">
+                    <option value="Mental Peace & Detox">
+                    <option value="Entrepreneurship">
+                </datalist>
+
+                <h3 style="margin-top: 30px; color: var(--red);">THREAT CONTAINMENT (RESTRICTIONS)</h3>
+                <span class="subtitle">Select apps to restrict and set time limits.</span>
+                
+                <div id="app-selection" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 30px;">
+                    </div>
+
+                <button onclick="register()" style="width: 100%;">CALIBRATE & START</button>
+                <button onclick="switchView('view-login')" style="width: 100%; margin-top: 10px; border-color: #555; color: #888;">CANCEL</button>
+            </div>
+
+            <div id="view-dash" class="view">
+                
+                <div class="dash-header">
+                    <div>
+                        <h1 id="dash-user">STARK</h1>
+                        <span class="subtitle">SYSTEM STATUS: <span style="color:var(--cyan)">ONLINE</span></span>
+                    </div>
+                    <button class="btn-gold" onclick="toggleFullscreen()">MAXIMIZE INTERFACE</button>
+                </div>
+
+                <div class="section-card card-gold">
+                    <h3 style="color: var(--gold)">CURRENT OBJECTIVE</h3>
+                    <div id="dash-goal" style="font-size: 24px; font-weight: bold; margin-top: 10px;">-</div>
+                    <div class="stat-grid">
+                        <div class="stat-box">
+                            <span class="stat-val" style="color:var(--gold)">0</span>
+                            <span class="subtitle">DAYS STREAK</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-val" id="dash-grade">-</span>
+                            <span class="subtitle">RATING</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-val" style="color:var(--cyan)">100%</span>
+                            <span class="subtitle">FOCUS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-card card-red">
+                    <h3 style="color: var(--red)">ACTIVE PROTOCOLS</h3>
+                    <span class="subtitle">APPS CURRENTLY UNDER SURVEILLANCE</span>
+                    <div id="dash-apps-list">
+                        </div>
+                </div>
+
+                <div class="section-card card-cyan">
+                    <h3>SYSTEM ANALYTICS</h3>
+                    <div style="height: 100px; display: flex; align-items: flex-end; gap: 5px; margin-top: 20px; opacity: 0.8;">
+                        <div style="width:10%; height:40%; background:var(--cyan);"></div>
+                        <div style="width:10%; height:70%; background:var(--cyan);"></div>
+                        <div style="width:10%; height:50%; background:var(--cyan);"></div>
+                        <div style="width:10%; height:90%; background:var(--cyan);"></div>
+                        <div style="width:10%; height:60%; background:var(--cyan);"></div>
+                        <div style="width:10%; height:80%; background:var(--cyan);"></div>
+                        <div style="width:10%; height:30%; background:var(--cyan);"></div>
+                        <div style="width:10%; height:50%; background:var(--cyan);"></div>
+                        <div style="width:10%; height:75%; background:var(--cyan);"></div>
+                        <div style="width:10%; height:45%; background:var(--cyan);"></div>
+                    </div>
+                </div>
+
+                <div class="terminal-log" id="term-log">
+                    > SYSTEM INIT... OK<br>
+                    > LOADING USER PROFILE... OK<br>
+                    > CONNECTING TO HOST... OK<br>
+                    > THREAT DETECTION ACTIVE...<br>
+                </div>
+
+                <button onclick="logout()" style="margin-top: 20px; border-color: #555; color: #888;">TERMINATE SESSION</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
