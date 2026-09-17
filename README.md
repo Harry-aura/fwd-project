@@ -2,16 +2,17 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=5,15,25,32&height=220&section=header&text=%E2%9A%A1%20Modern%20Frontend%20Architecture&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Component%20Hierarchy%20%7C%20Zero-CLS%20Rendering%20%7C%20Design%20Token%20Engine&descFontSize=15&descAlignY=58" width="100%" />
   <br/>
   <p align="center">
+    <a href="https://harry-aura.github.io/fwd-project/"><img src="https://img.shields.io/badge/%F0%9F%9A%80%20LIVE%20APP-OPEN%20PORTAL-00C853?style=for-the-badge&labelColor=0d1117" alt="Live Demo" /></a>
     <a href="https://github.com/Harry-aura/fwd-project/blob/main/docs/ARCHITECTURE.md"><img src="https://img.shields.io/badge/%F0%9F%9B%A1%EF%B8%8F%20SYSTEM%20SPEC-ARCHITECTURE-2563EB?style=for-the-badge&labelColor=0d1117" alt="Architecture" /></a>
     <a href="https://github.com/Harry-aura/fwd-project/blob/main/docs/DATA_FLOW.md"><img src="https://img.shields.io/badge/%F0%9F%94%84%20DATA%20FLOW-PIPELINE-10B981?style=for-the-badge&labelColor=0d1117" alt="Data Flow" /></a>
     <a href="https://github.com/Harry-aura/fwd-project/blob/main/docs/INTERVIEW_GUIDE.md"><img src="https://img.shields.io/badge/%F0%9F%94%8E%20TECH%20DEFENSE-DEEP%20DIVE-9333EA?style=for-the-badge&labelColor=0d1117" alt="Interview Guide" /></a>
   </p>
   <p align="center">
-    <img src="https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-    <img src="https://img.shields.io/badge/HTML5-Semantic%20Shell-E34F26?style=flat-square&logo=html5&logoColor=white" />
-    <img src="https://img.shields.io/badge/CSS3-Modular%20Tokens-1572B6?style=flat-square&logo=css3&logoColor=white" />
-    <img src="https://img.shields.io/badge/Responsive-Mobile%20First-38B2AC?style=flat-square" />
-    <img src="https://img.shields.io/badge/License-MIT-F59E0B?style=flat-square" />
+    <a href="https://github.com/Harry-aura/fwd-project/blob/main/script.js"><img src="https://img.shields.io/badge/JavaScript-ES6%2B%20Module-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript File" /></a>
+    <a href="https://github.com/Harry-aura/fwd-project/blob/main/index.html"><img src="https://img.shields.io/badge/HTML5-Semantic%20DOM-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5 File" /></a>
+    <a href="https://github.com/Harry-aura/fwd-project/blob/main/style.css"><img src="https://img.shields.io/badge/CSS3-Modular%20Tokens-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3 File" /></a>
+    <a href="https://github.com/Harry-aura/fwd-project/blob/main/docs/SYSTEM_DESIGN.md"><img src="https://img.shields.io/badge/Design-Zero--CLS%20Layout-38B2AC?style=flat-square" alt="System Design" /></a>
+    <a href="https://github.com/Harry-aura/fwd-project/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-F59E0B?style=flat-square" alt="License" /></a>
   </p>
 </div>
 
@@ -73,13 +74,13 @@ flowchart TD
 
 ---
 
-## 🛠️ Technology Stack
+## 🛠️ Technology Stack & Source Navigation
 
-| Domain | Technology | Direct File Link | Implementation Focus |
+| Domain | Technology | File Target | Implementation Focus |
 | :--- | :--- | :--- | :--- |
-| **Markup & Semantics** | HTML5 | [`index.html`](./index.html) | SEO tags, landmark regions (`main`, `nav`, `section`), ARIA standards |
-| **Styling Architecture** | CSS3 | [`style.css`](./style.css) | CSS variables, container queries, hardware-accelerated transforms |
-| **Client Scripting** | JavaScript ES6+ | [`script.js`](./script.js) | Event delegation, async fetch pipelines, functional state helpers |
+| **Markup & Semantics** | HTML5 Specification | [`index.html`](https://github.com/Harry-aura/fwd-project/blob/main/index.html) | SEO tags, landmark regions (`main`, `nav`, `section`), ARIA standards |
+| **Styling Architecture** | CSS3 (Modern Flex/Grid) | [`style.css`](https://github.com/Harry-aura/fwd-project/blob/main/style.css) | CSS variables, container queries, hardware-accelerated transforms |
+| **Client Scripting** | ECMAScript 2022+ | [`script.js`](https://github.com/Harry-aura/fwd-project/blob/main/script.js) | Event delegation, async fetch pipelines, functional state helpers |
 
 ---
 
@@ -89,9 +90,9 @@ flowchart TD
 git clone [https://github.com/Harry-aura/fwd-project.git](https://github.com/Harry-aura/fwd-project.git)
 cd fwd-project
 
-# Run locally using lightweight Python HTTP server:
+# Open index.html directly or preview with Python:
 python -m http.server 8080
-# Open http://localhost:8080 in your browser
+# Open http://localhost:8080
 ```
 
 ---
@@ -109,3 +110,4 @@ python -m http.server 8080
 
 **Harivikash Katta**
 - **GitHub**: [@Harry-aura](https://github.com/Harry-aura)
+- **Live Portal**: [Launch Live Application](https://harry-aura.github.io/fwd-project/)
