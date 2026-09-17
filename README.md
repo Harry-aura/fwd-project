@@ -7,11 +7,11 @@
     <a href="https://github.com/Harry-aura/fwd-project/blob/main/docs/INTERVIEW_GUIDE.md"><img src="https://img.shields.io/badge/%F0%9F%94%8E%20TECH%20DEFENSE-DEEP%20DIVE-9333EA?style=for-the-badge&labelColor=0d1117" alt="Interview Guide" /></a>
   </p>
   <p align="center">
-    <a href="https://github.com/Harry-aura/fwd-project"><img src="https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" /></a>
-    <a href="https://github.com/Harry-aura/fwd-project"><img src="https://img.shields.io/badge/HTML5-Semantic%20Shell-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" /></a>
-    <a href="https://github.com/Harry-aura/fwd-project"><img src="https://img.shields.io/badge/CSS3-Modular%20Tokens-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" /></a>
-    <a href="https://github.com/Harry-aura/fwd-project"><img src="https://img.shields.io/badge/Responsive-Mobile%20First-38B2AC?style=flat-square" alt="Responsive" /></a>
-    <a href="https://github.com/Harry-aura/fwd-project/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-F59E0B?style=flat-square" alt="License" /></a>
+    <img src="https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+    <img src="https://img.shields.io/badge/HTML5-Semantic%20Shell-E34F26?style=flat-square&logo=html5&logoColor=white" />
+    <img src="https://img.shields.io/badge/CSS3-Modular%20Tokens-1572B6?style=flat-square&logo=css3&logoColor=white" />
+    <img src="https://img.shields.io/badge/Responsive-Mobile%20First-38B2AC?style=flat-square" />
+    <img src="https://img.shields.io/badge/License-MIT-F59E0B?style=flat-square" />
   </p>
 </div>
 
@@ -75,24 +75,23 @@ flowchart TD
 
 ## 🛠️ Technology Stack
 
-| Domain | Technology | Implementation Focus |
-| :--- | :--- | :--- |
-| **Markup & Semantics** | HTML5 Specification | SEO tags, landmark regions (`main`, `nav`, `section`), ARIA standards |
-| **Styling Architecture** | CSS3 (Modern Flex/Grid) | CSS variables, container queries, hardware-accelerated transforms |
-| **Client Scripting** | ECMAScript 2022+ | Event delegation, async fetch pipelines, functional state helpers |
+| Domain | Technology | Direct File Link | Implementation Focus |
+| :--- | :--- | :--- | :--- |
+| **Markup & Semantics** | HTML5 | [`index.html`](./index.html) | SEO tags, landmark regions (`main`, `nav`, `section`), ARIA standards |
+| **Styling Architecture** | CSS3 | [`style.css`](./style.css) | CSS variables, container queries, hardware-accelerated transforms |
+| **Client Scripting** | JavaScript ES6+ | [`script.js`](./script.js) | Event delegation, async fetch pipelines, functional state helpers |
 
 ---
 
 ## 🚀 Local Development Setup
 
-Clone and preview locally without needing build chains:
 ```bash
 git clone [https://github.com/Harry-aura/fwd-project.git](https://github.com/Harry-aura/fwd-project.git)
 cd fwd-project
 
-# Open index.html directly in your default browser, or serve with Python:
+# Run locally using lightweight Python HTTP server:
 python -m http.server 8080
-# Navigate to: http://localhost:8080
+# Open http://localhost:8080 in your browser
 ```
 
 ---
